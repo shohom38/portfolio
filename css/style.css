@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 2rem;
+    color: #212529;
+}
+h1, h2 {
+    color: #343a40;
+}
+.section {
+    margin-bottom: 3rem;
+}
+.project-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+.contribution {
+    margin-left: 37px;
+    text-indent: -37px;    
+}
+.demo-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #0d6efd;
+    text-decoration: none;
+}
+.demo-link:hover {
+    text-decoration: underline;
+}
+
+#brushSize {
+    vertical-align: middle;    
+}
+
+.toolbar {
+    margin: 1rem 0;
+}
+.toolbar label {
+    margin-right: 0.5rem;
+}
+
+/* 펜 지우개 토글 버튼 */
+
+#toggleEraseBtn {
+    min-width: 55px;
+}
+
+.erase-btn {
+    background-color: #e1e1e1;
+    color: #4c4c4c;
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+    padding: 3px 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: 0.2s all ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.erase-btn:hover {
+    background-color: #aaa;
+    color: #fff;
+}
+.erase-btn.on {
+    background-color: #aaa;
+    color: #fff;    
+}
+
+/* 드래그 드랍 */
+.drag-drop-wrap {
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: center;
+}
+
+#feedbackWrap {
+    position: absolute;
+    display: flex;
+    width: 300px;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    text-align: center;
+    border-radius: 14px;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+    transition: all ease-in-out 1s;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+#feedbackWrap.on {
+    opacity: 1;
+    z-index: 1;
+}
+#feedback {
+    background-color: #eee;
+    border-radius: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    padding: 13px;
+
+}
+.drop-zone {
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    border: 2px dashed #aaa;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #fff;
+}
+.drag-item {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0.5rem;
+}
